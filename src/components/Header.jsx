@@ -17,11 +17,13 @@ const Header = () => {
 
           {/* Buttons Section */}
           <div className="flex space-x-4">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
+            <button className="bg-[#0047b2] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#00a4d6] transition-colors">
               078 25416466
             </button>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
-              CALL US TODAY FOR A FREE QUOTE
+            <button className="bg-[#0047b2] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#00a4d6] transition-colors">
+              CALL US TODAY FOR A
+              <br />
+               FREE QUOTE
             </button>
           </div>
         </div>

@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
           </button>
 
           {/* Testimonials Container */}
-          <div className="text-center px-10 py-12">
+          <div className="text-center px-10">
             <div className="relative min-h-96 flex items-center justify-center">
               {testimonials.map((testimonial, index) => (
                 <div
@@ -73,14 +73,14 @@ const TestimonialSlider = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star 
                         key={i} 
-                        className="w-5 h-5 md:w-8 md:h-8 text-cyan-400 fill-current mx-2" 
+                        className="w-5 h-5 md:w-12 md:h-12 text-cyan-400 fill-current mx-2" 
                       />
                     ))}
                   </div>
 
                   {/* Testimonial Text - Larger and centered */}
                   <div className="mb-12 max-w-5xl px-4">
-                    <p className="text-base md:text-2xl lg:text-3xl font-normal leading-relaxed text-center text-gray-100">
+                    <p className="text-base md:text-xl  font-normal leading-relaxed text-center text-gray-100">
                       {testimonial.text}
                     </p>
                   </div>

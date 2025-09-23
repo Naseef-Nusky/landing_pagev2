@@ -14,7 +14,7 @@ const HeroSection = ({ formData, handleInputChange, handleSubmit, backgroundImag
       <div className="container mx-auto relative z-10 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="">
-              <h1 className="font-mont text-[22px] text-white mx-[10%] md:mx-0 flex items-center justify-center text-center">
+              <h1 className="font-mont text-[35px] text-white  md:mx-0 flex items-center justify-center text-center leading-relaxed">
               Finding a Trustworthy Private Investigator Might Be More Affordable Than You Expect!
             </h1>
           </div>
