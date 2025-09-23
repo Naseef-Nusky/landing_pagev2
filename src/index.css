@@ -11,6 +11,6 @@
 }
 
 html, body, #root {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif, 'Barlow';
   height: 100%;
 }
