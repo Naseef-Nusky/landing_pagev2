@@ -4,14 +4,14 @@ import { ChevronDown } from 'lucide-react';
 const Item = ({ q, a }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={`fusion-accordian fusion-toggle-icon-unboxed border border-[#1b1bab] ${open ? 'bg-[#1b1bab] text-white' : 'bg-[#eff9f9] text-black'}`}>
+    <div className={`fusion-accordian fusion-toggle-icon-unboxed border-[2px] border-[#1b1bab] ${open ? 'bg-[#1b1bab] text-white' : 'bg-[#eff9f9] text-black'}`}>
       <button
         onClick={() => setOpen((v) => !v)}
         className={`panel-title w-full text-left px-5 py-4 flex items-center justify-between ${open ? 'active' : ''}`}
       >
         <span className={`font-semibold ${open ? 'text-white' : 'text-black'}`}>{q}</span>
         <span className={`fa-fusion-box w-6 h-6 inline-flex items-center justify-center rounded-full border ${open ? 'border-white/80 text-white' : 'border-[#1b1bab] text-[#1b1bab]'}`}>
-          <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${open ? 'rotate-180' : 'rotate-0'}`} />
+          <ChevronDown className={`w-6 h-6 transition-transform duration-200 ${open ? 'rotate-180' : 'rotate-0'}`} />
         </span>
       </button>
       {open && (
@@ -33,7 +33,7 @@ const AccordionFAQ = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-white">
+    <section className="py-5 bg-white">
       <div className="container mx-auto px-4 space-y-4">
         {items.map((it, idx) => (
           <Item key={idx} q={it.q} a={it.a} />

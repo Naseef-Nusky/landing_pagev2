@@ -1,18 +1,18 @@
 import React from 'react';
 
 const Card = ({ image, title, children }) => (
-  <div className="bg-white shadow-sm">
+  <div className="bg-white shadow-sm h-full flex flex-col">
     <div className="aspect-[3/2] w-full overflow-hidden">
       <img src={image} alt={title} className="w-full h-full object-cover" />
     </div>
-    <div className="bg-gray-100 px-6 py-8 text-center">
+    <div className="bg-gray-100 px-6 py-8 text-center flex-1 flex flex-col">
       <h3 className="text-[30px] font-medium mb-4">{title}</h3>
- <p
-  style={{ fontFamily: '"Barlow", sans-serif' }}
-  className="leading-7 text-[#653465]"
->
-  {children}
-</p>
+      <p
+        style={{ fontFamily: '"Barlow", sans-serif' }}
+        className="leading-7 text-[#653465] flex-1"
+      >
+        {children}
+      </p>
     </div>
   </div>
 );
@@ -24,9 +24,9 @@ const ServicesGrid = () => {
   const img4 = 'https://www.hendersonthomasinvestigations.co.uk/wp-content/uploads/2025/02/4-800x534.jpg';
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full">
           <Card image={img1} title="Covert Surveillance">
             Our team of highly skilled private detectives conducts private surveillance to gather the critical evidence you need. We discreetly capture high-quality photo and video evidence, ensuring your investigation is handled with professionalism.
           </Card>
@@ -46,5 +46,3 @@ const ServicesGrid = () => {
 };
 
 export default ServicesGrid;
-
-
