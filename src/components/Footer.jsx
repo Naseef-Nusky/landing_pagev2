@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="space-y-3 mb-12">
             {/* Phone and Email */}
-            <div className="text-black text-sm">
+            <div className="text-black text-[12px]">
               <span>Phone: 078 20416406</span><br />
               <span className="mx-2">Email:</span>
               <a href="mailto:private@hendersonthomasinvestigations.com" className="text-black hover:text-blue-600">
@@ -33,14 +33,14 @@ const Footer = () => {
             </div>
 
             {/* Address */}
-            <div className="text-black text-sm">
+            <div className="text-black text-[12px]">
               1st Floor, 238 Kennington High St, London W8 6SN
             </div>
           </div>
 
           {/* Copyright */}
-          <div className="pt-6">
-            <p className="text-black text-sm">
+          <div className="pt-2">
+            <p className="text-black text-[12px]">
               © Copyright 2025 | All Rights Reserved
             </p>
           </div>
