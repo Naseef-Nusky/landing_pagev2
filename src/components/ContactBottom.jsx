@@ -23,17 +23,17 @@ const ContactFormSection = () => {
 
   return (
     <section 
-      className="relative py-20 bg-cover bg-center bg-no-repeat min-h-screen flex items-center"
+      className="relative py-20 bg-cover bg-center bg-no-repeat flex items-center"
       style={{
         backgroundImage: `url('https://hendersonthomasinvestigations.co.uk/wp-content/uploads/2023/07/contact-bottom.jpg')`
       }}
     >
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Header Text */}
           <div className="mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-2xl text-white mb-6 leading-tight">
               Please Submit Your Details Below To Receive Your Free Quote
             </h2>
             <p className="text-cyan-400 text-lg md:text-xl font-medium">
@@ -42,7 +42,7 @@ const ContactFormSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="max-w-lg mx-auto">
+          <div className="mx-auto">
             <div className="space-y-4">
               <input
                 type="text"

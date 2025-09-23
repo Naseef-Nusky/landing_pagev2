@@ -41,7 +41,7 @@ const ContactForm = ({ formData, handleInputChange, handleSubmit }) => {
 
       <button
         onClick={handleSubmit}
-        className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-none text-lg transition-all duration-300 shadow-lg transform hover:scale-105"
+        className="w-full bg-[#FF9902] hover:bg-[#FFB84D] text-white font-bold py-3 px-6 rounded-none text-lg transition-all duration-300 shadow-lg transform hover:scale-102"
       >
         Receive Free Quote
       </button>

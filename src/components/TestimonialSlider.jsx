@@ -34,7 +34,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="py-20 bg-slate-800 text-white relative overflow-hidden">
+    <section className="py-8 bg-slate-800 text-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="relative max-w-6xl mx-auto">
           {/* Navigation Arrows */}
@@ -80,7 +80,7 @@ const TestimonialSlider = () => {
 
                   {/* Testimonial Text - Larger and centered */}
                   <div className="mb-12 max-w-5xl px-4">
-                    <p className="text-xl md:text-2xl lg:text-3xl font-normal leading-relaxed text-center text-gray-100">
+                    <p className="text-base md:text-2xl lg:text-3xl font-normal leading-relaxed text-center text-gray-100">
                       {testimonial.text}
                     </p>
                   </div>
@@ -88,7 +88,7 @@ const TestimonialSlider = () => {
                   {/* Customer Info */}
                   <div className="text-center">
                     {/* Customer Name - Large Yellow Text */}
-                    <h4 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
+                    <h4 className="text-3xl md:text-4xl text-yellow-500 mb-4">
                       {testimonial.name}
                     </h4>
                     
