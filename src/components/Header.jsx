@@ -1,55 +1,73 @@
-import React from 'react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react"; // for hamburger and close icons
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="bg-white shadow-sm">
-      <div className="container mx-auto px-4 py-4">
-        {/* Desktop Layout */}
-        <div className="hidden md:flex justify-between items-center">
-          {/* Logo Section */}
-          <div className="flex items-center">
-            <img
-              src="https://www.hendersonthomasinvestigations.co.uk/wp-content/uploads/2025/02/henderson-thomas-investigations.png"
-              alt="Henderson Thomas Investigations"
-              className="h-12 w-auto"
-            />
-          </div>
-
-          {/* Buttons Section */}
-          <div className="flex space-x-4">
-            <button className="bg-[#0047b2] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#00a4d6] transition-colors">
-              078 25416466
-            </button>
-            <button className="bg-[#0047b2] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#00a4d6] transition-colors">
-              CALL US TODAY FOR A
-              <br />
-               FREE QUOTE
-            </button>
-          </div>
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src="https://www.hendersonthomasinvestigations.co.uk/wp-content/uploads/2025/02/henderson-thomas-investigations.png"
+            alt="Henderson Thomas Investigations"
+            className="h-10 md:h-12 w-auto"
+          />
         </div>
 
-        {/* Mobile Layout */}
-        <div className="md:hidden">
-          {/* Logo - Centered on mobile */}
-          <div className="flex justify-center mb-4">
-            <img
-              src="https://www.hendersonthomasinvestigations.co.uk/wp-content/uploads/2025/02/henderson-thomas-investigations.png"
-              alt="Henderson Thomas Investigations"
-              className="h-10 w-auto"
-            />
-          </div>
+        {/* Desktop Nav */}
+        <nav className="hidden lg:flex space-x-8 text-sm font-medium">
+          <a href="#" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">HOME</a>
+          <a href="#services" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">OUR SERVICES</a>
+          <a href="#about" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">ABOUT</a>
+          <a href="#contact" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">CONTACT</a>
+        </nav>
 
-          {/* Buttons - Stacked on mobile */}
-          <div className="flex flex-col space-y-3">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors w-full">
-              078 25416466
-            </button>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors w-full">
-              CALL US TODAY FOR A FREE QUOTE
-            </button>
-          </div>
-        </div>
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-gray-700"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Nav Dropdown */}
+      {isOpen && (
+        <div className="lg:hidden bg-white border-t border-gray-200">
+          <nav className="flex flex-col items-center space-y-4 py-4 text-sm font-medium">
+            <a
+              href="#"
+              className="text-gray-700 hover:text-[#0047b2] transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              HOME
+            </a>
+            <a
+              href="#services"
+              className="text-gray-700 hover:text-[#0047b2] transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              OUR SERVICES
+            </a>
+            <a
+              href="#about"
+              className="text-gray-700 hover:text-[#0047b2] transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              ABOUT
+            </a>
+            <a
+              href="#contact"
+              className="text-gray-700 hover:text-[#0047b2] transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              CONTACT
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

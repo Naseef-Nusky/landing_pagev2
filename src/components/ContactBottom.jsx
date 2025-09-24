@@ -37,6 +37,7 @@ const ContactFormSection = () => {
 
   return (
     <section 
+     id="contact"
       className="relative py-20 bg-cover bg-center bg-no-repeat flex items-center"
       style={{
         backgroundImage: `url('https://hendersonthomasinvestigations.co.uk/wp-content/uploads/2023/07/contact-bottom.jpg')`
