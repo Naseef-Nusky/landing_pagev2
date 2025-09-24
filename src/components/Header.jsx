@@ -18,10 +18,10 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex space-x-8 text-sm font-medium">
-          <a href="#" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">HOME</a>
-          <a href="#services" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">OUR SERVICES</a>
-          <a href="#about" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">ABOUT</a>
-          <a href="#contact" className="text-gray-700 hover:text-[#0047b2] transition-colors font-medium">CONTACT</a>
+          <a href="/" className="text-gray-700 hover:text-[#0047b2] transition-colors font-semibold">HOME</a>
+          <a href="#services" className="text-gray-700 hover:text-[#0047b2] transition-colors font-semibold">OUR SERVICES</a>
+          <a href="#about" className="text-gray-700 hover:text-[#0047b2] transition-colors font-semibold">ABOUT</a>
+          <a href="#contact" className="text-gray-700 hover:text-[#0047b2] transition-colors font-semibold">CONTACT</a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -38,7 +38,7 @@ const Header = () => {
         <div className="lg:hidden bg-white border-t border-gray-200">
           <nav className="flex flex-col items-center space-y-4 py-4 text-sm font-medium">
             <a
-              href="#"
+              href="/"
               className="text-gray-700 hover:text-[#0047b2] transition-colors"
               onClick={() => setIsOpen(false)}
             >

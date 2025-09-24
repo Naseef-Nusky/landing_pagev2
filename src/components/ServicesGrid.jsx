@@ -90,12 +90,11 @@ const ServicesGrid = () => {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#00b9ed] mb-4">
-            Our Professional Services
-          </h2>
+            <h2 className="text-4xl  font-bold text-[#0047b2] mb-8">
+                Our Professional Services
+            </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Henderson Thomas Investigations provides discreet, professional, and
-            results-driven private investigation services tailored to your needs.
+      Confidential, professional, and tailored investigation services delivering clear, reliable results.
           </p>
         </div>
 
