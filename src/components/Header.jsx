@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // mobile menu
   const [servicesOpen, setServicesOpen] = useState(false); // desktop dropdown
@@ -53,17 +53,14 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex space-x-8 text-sm font-medium items-center">
+        {/* <nav className="hidden lg:flex space-x-8 text-sm font-medium items-center">
           <a href="/" className="text-gray-700 hover:text-[#0047b2] transition-colors font-semibold">
             HOME
           </a>
-
-          {/* Services wrapper: handles hover + focus + keyboard */}
           <div
             className="relative lg:group"
             onMouseEnter={openServices}
             onMouseLeave={() => closeServicesWithDelay(150)}
-            // onFocus/onBlur help keyboard users — blur will start the same delayed close
             onFocus={openServices}
             onBlur={() => closeServicesWithDelay(150)}
           >
@@ -73,9 +70,7 @@ const Header = () => {
             >
               OUR SERVICES <ChevronDown size={16} className="ml-1" />
             </Link>
-                        
-
-            {/* Dropdown: visible if state true OR CSS group-hover (fallback) */}
+                      
             <div
               id="services-menu"
               role="menu"
@@ -108,7 +103,7 @@ const Header = () => {
           <a href="/contact-us" className="text-gray-700 hover:text-[#0047b2] transition-colors font-semibold">
             CONTACT
           </a>
-        </nav>
+        </nav> */}
 
         {/* Mobile Menu Button */}
         <button className="lg:hidden text-gray-700" onClick={() => setIsOpen((s) => !s)}>
@@ -119,8 +114,7 @@ const Header = () => {
       {/* Mobile Nav */}
       {isOpen && (
 <div className="lg:hidden bg-white border-t border-gray-200">
-  <nav className="flex flex-col space-y-2 py-4 text-sm font-medium px-6">
-    {/* Home */}
+  {/* <nav className="flex flex-col space-y-2 py-4 text-sm font-medium px-6">
     <a
       href="/"
       className="block text-gray-700 hover:text-[#0047b2]"
@@ -129,7 +123,6 @@ const Header = () => {
       HOME
     </a>
 
-    {/* Services Dropdown */}
     <details>
       <summary className="cursor-pointer text-gray-700 hover:text-[#0047b2] font-semibold">
         OUR SERVICES
@@ -155,8 +148,6 @@ const Header = () => {
         </a>
       </div>
     </details>
-
-    {/* About */}
     <a
       href="/about-us"
       className="block text-gray-700 hover:text-[#0047b2]"
@@ -164,8 +155,6 @@ const Header = () => {
     >
       ABOUT
     </a>
-
-    {/* Contact */}
     <a
       href="/contact-us"
       className="block text-gray-700 hover:text-[#0047b2]"
@@ -173,7 +162,7 @@ const Header = () => {
     >
       CONTACT
     </a>
-  </nav>
+  </nav> */}
 </div>
 
       )}
