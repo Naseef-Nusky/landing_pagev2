@@ -7,14 +7,14 @@ const AboutUs = () => {
   return (
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-14 max-w-3xl mx-auto">
-  <h2 className="text-4xl md:text-5xl font-bold text-[#0047b2] mb-4">
-    About Us
-  </h2>
-  <p className="text-lg md:text-xl text-gray-700">
-    Henderson Thomas Investigations specialises in a wide range of investigative services, delivering clear, reliable results with professionalism and discretion.
-  </p>
-</div>
+        <div className="text-center mb-14">
+          <h2 className="text-4xl font-bold text-[#0047b2] mb-8">
+           About Us
+          </h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+              Henderson Thomas Investigations specialises in a wide range of investigative services, delivering clear, reliable results with professionalism and discretion.
+          </p>
+        </div>
         <div className="flex flex-col md:flex-row items-center gap-12 pb-10">
           {/* Text Content */}
           

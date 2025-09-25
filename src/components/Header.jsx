@@ -118,33 +118,64 @@ const Header = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200">
-          <nav className="flex flex-col items-center space-y-4 py-4 text-sm font-medium">
-            <a href="/" className="text-gray-700 hover:text-[#0047b2]" onClick={() => setIsOpen(false)}>
-              HOME
-            </a>
+<div className="lg:hidden bg-white border-t border-gray-200">
+  <nav className="flex flex-col space-y-2 py-4 text-sm font-medium px-6">
+    {/* Home */}
+    <a
+      href="/"
+      className="block text-gray-700 hover:text-[#0047b2]"
+      onClick={() => setIsOpen(false)}
+    >
+      HOME
+    </a>
 
-            <details className="w-full px-6">
-              <summary className="cursor-pointer text-gray-700 hover:text-[#0047b2] font-semibold">
-                OUR SERVICES
-              </summary>
-              <div className="flex flex-col mt-2 ml-4 space-y-2 pb-2">
-                <a href="/services/personal" onClick={() => setIsOpen(false)}>Personal Investigation</a>
-                <a href="/services/missing" onClick={() => setIsOpen(false)}>Missing Persons</a>
-                <a href="/services/covert" onClick={() => setIsOpen(false)}>Covert Investigations</a>
-                <a href="/services/fraud" onClick={() => setIsOpen(false)}>Fraud Investigation</a>
-                <a href="/services/background" onClick={() => setIsOpen(false)}>Background Checking</a>
-              </div>
-            </details>
+    {/* Services Dropdown */}
+    <details>
+      <summary className="cursor-pointer text-gray-700 hover:text-[#0047b2] font-semibold">
+        OUR SERVICES
+      </summary>
+      <div className="flex flex-col mt-2 ml-4 space-y-2 pb-2">
+        <a href="/services" onClick={() => setIsOpen(false)}>
+          All Services
+        </a>
+        <a href="/services/personal" onClick={() => setIsOpen(false)}>
+          Personal Investigation
+        </a>
+        <a href="/services/missing" onClick={() => setIsOpen(false)}>
+          Missing Persons
+        </a>
+        <a href="/services/covert" onClick={() => setIsOpen(false)}>
+          Covert Investigations
+        </a>
+        <a href="/services/fraud" onClick={() => setIsOpen(false)}>
+          Fraud Investigation
+        </a>
+        <a href="/services/background" onClick={() => setIsOpen(false)}>
+          Background Checking
+        </a>
+      </div>
+    </details>
 
-            <a href="/about-us" className="text-gray-700 hover:text-[#0047b2]" onClick={() => setIsOpen(false)}>
-              ABOUT
-            </a>
-            <a href="/contact-us" className="text-gray-700 hover:text-[#0047b2]" onClick={() => setIsOpen(false)}>
-              CONTACT
-            </a>
-          </nav>
-        </div>
+    {/* About */}
+    <a
+      href="/about-us"
+      className="block text-gray-700 hover:text-[#0047b2]"
+      onClick={() => setIsOpen(false)}
+    >
+      ABOUT
+    </a>
+
+    {/* Contact */}
+    <a
+      href="/contact-us"
+      className="block text-gray-700 hover:text-[#0047b2]"
+      onClick={() => setIsOpen(false)}
+    >
+      CONTACT
+    </a>
+  </nav>
+</div>
+
       )}
     </header>
   );
