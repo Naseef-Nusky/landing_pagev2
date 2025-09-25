@@ -129,18 +129,18 @@ const Header = () => {
                 OUR SERVICES
               </summary>
               <div className="flex flex-col mt-2 ml-4 space-y-2 pb-2">
-                <a href="#personal" onClick={() => setIsOpen(false)}>Personal Investigation</a>
-                <a href="#missing" onClick={() => setIsOpen(false)}>Missing Persons</a>
-                <a href="#covert" onClick={() => setIsOpen(false)}>Covert Investigations</a>
-                <a href="#fraud" onClick={() => setIsOpen(false)}>Fraud Investigation</a>
-                <a href="#background" onClick={() => setIsOpen(false)}>Background Checking</a>
+                <a href="/services/personal" onClick={() => setIsOpen(false)}>Personal Investigation</a>
+                <a href="/services/missing" onClick={() => setIsOpen(false)}>Missing Persons</a>
+                <a href="/services/covert" onClick={() => setIsOpen(false)}>Covert Investigations</a>
+                <a href="/services/fraud" onClick={() => setIsOpen(false)}>Fraud Investigation</a>
+                <a href="/services/background" onClick={() => setIsOpen(false)}>Background Checking</a>
               </div>
             </details>
 
-            <a href="#about" className="text-gray-700 hover:text-[#0047b2]" onClick={() => setIsOpen(false)}>
+            <a href="/about-us" className="text-gray-700 hover:text-[#0047b2]" onClick={() => setIsOpen(false)}>
               ABOUT
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-[#0047b2]" onClick={() => setIsOpen(false)}>
+            <a href="/contact-us" className="text-gray-700 hover:text-[#0047b2]" onClick={() => setIsOpen(false)}>
               CONTACT
             </a>
           </nav>
