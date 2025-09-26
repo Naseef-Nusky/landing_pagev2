@@ -11,17 +11,11 @@ import AccordionFAQ from './components/AccordionFAQ.jsx';
 import TestimonialSlider from './components/TestimonialSlider.jsx';
 import ContactFormSection from './components/ContactBottom.jsx';
 import Footer from './components/Footer.jsx';
-
-// Pages (single service pages)
-// import Home from './pages/Home.jsx'; // optional, or same as main App content
-import Services from './pages/Service.jsx';
 import Personal from './pages/services/Personal.jsx';
 import Missing from './pages/services/Missing.jsx';
 import Covert from './pages/services/Covert.jsx';
 import Fraud from './pages/services/Fraud.jsx';
 import Background from './pages/services/Background.jsx';
-import AboutUs from './pages/AboutUs.jsx';
-import CotactUs from './pages/ContactUs.jsx';
 function App() {
   const [formData, setFormData] = useState({
     name: '',
@@ -70,7 +64,6 @@ function App() {
           />
 
           {/* Services general page */}
-          <Route path="/services" element={<Services />} />
 
           {/* Single service pages */}
           <Route path="/services/personal" element={<Personal />} />
@@ -78,8 +71,6 @@ function App() {
           <Route path="/services/covert" element={<Covert />} />
           <Route path="/services/fraud" element={<Fraud />} />
           <Route path="/services/background" element={<Background />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<CotactUs />} />
         </Routes>
          <Footer />
       </div>
