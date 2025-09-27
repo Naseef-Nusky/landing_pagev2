@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section
       className="relative min-h-[60vh] flex items-center bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage: `url('https://hendersonthomasinvestigations.co.uk/wp-content/uploads/2023/05/0d6dcfcf-3ee9-40ee-a127-8940497694fc-bg2.original.jpg')`,
+        backgroundImage: `url('hero-landing.jpg ')`,
       }}
     >
       <div className="container mx-auto px-4 relative z-10 w-full">

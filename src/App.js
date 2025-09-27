@@ -52,10 +52,10 @@ function App() {
                   handleSubmit={handleSubmit}
                   backgroundImageUrl="https://hendersonthomasinvestigations.co.uk/wp-content/uploads/2023/05/0d6dcfcf-3ee9-40ee-a127-8940497694fc-bg2.original.jpg"
                 />
+                <ContactFormSection />
                 <WhyChooseUs />
                 <ThreeSteps />
-             <ServicesGrid latestOnly={true} />
-
+                <ServicesGrid />
                 <AccordionFAQ />
                 <TestimonialSlider />
                 <ContactFormSection />

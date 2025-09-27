@@ -6,7 +6,7 @@ const ThreeSteps = () => {
     <section
       className="relative text-white"
       style={{
-        backgroundImage: "url('https://www.rosewoodinvestigations.info/wp-content/uploads/2023/05/3steps.jpg')",
+        backgroundImage: "url('3steps.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
