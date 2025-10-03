@@ -5,36 +5,42 @@ import { Search, Users, Shield, Briefcase } from "lucide-react";
 
 // ServiceCard Component
 const ServiceCard = ({ image, title, icon: Icon, description, link }) => (
-  <div className="relative group overflow-hidden rounded-2xl shadow-lg flex flex-col h-[425px]">
-    {/* Image */}
-    <img
-      src={image}
-      alt={title}
-      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-    />
+  <div className="relative group overflow-hidden rounded-2xl shadow-lg flex flex-col h-[450px]">
 
     {/* Bottom overlay */}
-    <div className="absolute bottom-0 w-full p-6 bg-black/50 backdrop-blur-md flex flex-col justify-between h-[250px]">
-      <div>
-        <div className="flex items-center gap-3 mb-3">
-          <Icon className="w-6 h-6 text-[#00b9ed]" />
-          <h3 className="text-2xl font-bold text-white">{title}</h3>
-        </div>
-        <p className="text-gray-200 text-sm leading-6 line-clamp-3">{description}</p>
-      </div>
+<div className="w-full max-w-md rounded-xl overflow-hidden shadow-lg">
+  {/* Image */}
+  <img
+    src={image}
+    alt={title}
+    className="w-full h-40 object-cover"
+  />
 
-      {/* Read More Button */}
-      {/* {link && (
-        <div className="flex justify-end mt-2">
-          <Link
-            to={link}
-            className="flex items-center gap-2 px-3 py-1 bg-white text-[#0047b2] font-semibold rounded text-sm hover:bg-gray-100 transition-colors"
-          >
-            Read More <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      )} */}
+  {/* Content with blurred background */}
+  <div
+    className="relative bg-black/50 backdrop-blur-md min-h-[400px] gap-3"
+    style={{
+      backgroundImage: `url(${image})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+    {/* Overlay to darken + blur */}
+    <div className="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+
+    {/* Actual Content */}
+    <div className="relative flex flex-col gap-1 h-full p-6">
+      <Icon className="w-6 h-6 text-[#00b9ed]" />
+      <h3 className="text-2xl font-bold text-white">{title}</h3>
+      <p className="text-gray-200 text-sm leading-6 text-justify">
+        {description}
+      </p>
     </div>
+  </div>
+</div>
+
+
+
   </div>
 );
 
@@ -110,9 +116,9 @@ const ServicesGrid = ({ latestOnly = false }) => {
         </div>
 
         {/* Grid */}
-<div className="flex flex-wrap justify-center gap-10">
+<div className="flex flex-wrap justify-center gap-5 lg:gap-10">
   {servicesToShow.map((service) => (
-    <div className="flex-shrink-0 w-[360px]"> {/* fixed width per card */}
+    <div className="flex-shrink-0 w-[350px]"> {/* fixed width per card */}
       <ServiceCard key={service.id} {...service} />
     </div>
   ))}
