@@ -1,6 +1,7 @@
 import React from "react";
-import { Search, Users, Shield, Briefcase, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Search, Users, Shield, Briefcase } from "lucide-react";
+// import { Link } from "react-router-dom";
+// import { ArrowRight } from "lucide-react";
 
 // ServiceCard Component
 const ServiceCard = ({ image, title, icon: Icon, description, link }) => (
@@ -23,7 +24,7 @@ const ServiceCard = ({ image, title, icon: Icon, description, link }) => (
       </div>
 
       {/* Read More Button */}
-      {link && (
+      {/* {link && (
         <div className="flex justify-end mt-2">
           <Link
             to={link}
@@ -32,7 +33,7 @@ const ServiceCard = ({ image, title, icon: Icon, description, link }) => (
             Read More <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   </div>
 );
@@ -46,7 +47,7 @@ const servicesData = [
     title: "Covert Surveillance",
     icon: Search,
     description:
-      "Our highly skilled private detectives conduct discreet surveillance operations to collect photo and video evidence. Whether for personal, corporate, or legal matters, we ensure complete professionalism and confidentiality throughout your case.",
+      "Our expert private investigators carry out discreet surveillance to capture photo and video evidence you can rely on. Whether it’s for legal, personal, or corporate matters, we provide clear, professional results with complete confidentiality.",
     link: "/services/covert",
   },
   {
@@ -56,7 +57,7 @@ const servicesData = [
     title: "Missing Person Investigation",
     icon: Users,
     description:
-      "Every 90 seconds, someone is reported missing in the UK. Our detectives use advanced digital and forensic techniques to trace missing persons locally and internationally, offering peace of mind to families and clients worldwide.",
+      "Every 90 seconds someone goes missing in the UK. Our team uses advanced tracing methods, intelligence databases, and global contacts to locate individuals quickly and effectively — giving you answers and peace of mind.",
     link: "/services/missing",
   },
   {
@@ -66,7 +67,7 @@ const servicesData = [
     title: "Fraud Investigation",
     icon: Shield,
     description:
-      "Fraud is on the rise, costing victims billions annually. Our investigation team specializes in uncovering fraudulent activities, from financial scams to corporate fraud, with cutting-edge forensic analysis and deep industry expertise.",
+      "Fraud costs UK victims billions each year. We specialise in exposing scams, financial deception, and identity theft, gathering evidence you can act on. Protect yourself with fast, discreet support from our experienced fraud investigators.",
     link: "/services/fraud",
   },
   {
@@ -76,7 +77,7 @@ const servicesData = [
     title: "Personal Investigations",
     icon: Briefcase,
     description:
-      "From background checks and infidelity investigations to online dating inquiries, our detectives handle sensitive cases with care and discretion, providing you with the truth you deserve.",
+      "From background checks and online dating enquiries to infidelity and family matters, our detectives handle sensitive cases with care and discretion. We uncover the truth so you can make informed decisions with confidence.",
     link: "/services/personal",
   },
     {
@@ -85,7 +86,7 @@ const servicesData = [
     title: "Background Checking Services",
     icon: Briefcase,
     description:
-      "From criminal, employment, and financial checks to personal verification, our team provides accurate and confidential background checking services.",
+      "We provide thorough background checks for employment, finance, and personal matters. With discreet and accurate verification, our investigators deliver the facts you need to protect your interests and make smart choices.",
     link: "/services/background",
   },
 ];
